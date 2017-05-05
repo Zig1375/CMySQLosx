@@ -1,5 +1,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "CMySQL"
+    name: "CMySQL",
+    providers: [
+            .Brew("mysql"),
+            .Apt("mysql")
+    ]
 )
